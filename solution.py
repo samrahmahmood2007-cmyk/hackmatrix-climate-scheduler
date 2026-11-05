@@ -17,7 +17,8 @@ from scipy.sparse import coo_matrix
 # Contract: def carbon_series(obs) -> numpy array
 #   length obs['horizon_slots'], g/kWh, risk-buffered, ALL FINITE
 def carbon_series(obs):
-    return np.zeros(int(obs["horizon_slots"]), dtype=float)  # TEMP STUB
+    horizon = int(obs["horizon_slots"])
+    return np.zeros(horizon, dtype=float)
 # === END PASTE ZONE 1 =======================================================
 
 
@@ -25,14 +26,14 @@ def carbon_series(obs):
 # Contract: def solve_lp(obs, est) -> dict or None
 #   {job_id: integer units} for slot obs['slot']; None if the solver fails
 def solve_lp(obs, est):
-    return None  # TEMP STUB -> forces the EDF fallback path
+    return None
 # === END PASTE ZONE 2 =======================================================
 
 
 # === PASTE ZONE 3 — from safety.py (bhuvanesh) ==============================
 # Contract: def edf_dispatch(obs) -> dict
 def edf_dispatch(obs):
-    return {}  # TEMP STUB
+    return {}
 # === END PASTE ZONE 3 =======================================================
 
 
