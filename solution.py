@@ -30,7 +30,7 @@ def solve_lp(obs, est):
 
 
 # === PASTE ZONE 3 — from safety.py (bhuvanesh) ==============================
-# Contract: def edf_thumb_dispatch(obs) -> dict
+# Contract: def edf_dispatch(obs) -> dict
 def edf_dispatch(obs):
     return {}  # TEMP STUB
 # === END PASTE ZONE 3 =======================================================
