@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Climate decide response","type":"object","required":["action","state"],"additionalProperties":false,"properties":{"state":{},"action":{"type":"object","required":["dispatch"],"additionalProperties":false,"properties":{"dispatch":{"type":"object","additionalProperties":{"type":"integer","minimum":0}}}}}}
